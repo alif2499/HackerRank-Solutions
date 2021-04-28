@@ -1,4 +1,4 @@
-#check the problem statement
+
 
 a = [5,6,7]
 b = [3,6,10]
