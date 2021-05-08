@@ -1,2 +1,4 @@
 # HackerRank-Solutions
-Here are some solution to the hackerrank coding problems
+Here are some solutions to the hackerrank coding problems.
+
+## Happy Coding
