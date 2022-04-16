@@ -6,7 +6,7 @@ import random
 import re
 import sys
 
-#
+
 # Complete the 'taumBday' function below.
 #
 # The function is expected to return a LONG_INTEGER.
@@ -16,7 +16,7 @@ import sys
 #  3. INTEGER bc
 #  4. INTEGER wc
 #  5. INTEGER z
-#
+
 
 def taumBday(b, w, bc, wc, z):
     # Write your code here
