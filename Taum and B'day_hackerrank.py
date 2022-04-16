@@ -20,11 +20,11 @@ import sys
 
 def taumBday(b, w, bc, wc, z):
     # Write your code here
-    diff = abs(bc-wc)
-    if diff <= z:
-        return ((b*bc)+(w*wc))
+    diff = abs(bc-wc)                         # Calculates the difference between "bc" and "wc"
+    if diff <= z:                             # Checks if we need to use the "z" value (only if the difference is greater than "z")
+        return ((b*bc)+(w*wc))                # If difference <= "z":-> returns the price by multiplying each amount with it's own unit price
     else:
-        if bc > wc:
+        if bc > wc:                           # Otherwise, checks which unit price needs to be updated (replce the greater unit price with (lower unit price + "z"))
             return ((w*wc)+(b*(wc+z)))
         else:
             return ((b*bc)+(w*(bc+z)))
