@@ -30,9 +30,9 @@ import sys
 # This is the optimized code which will pass all the test cases
 
 def strangeCounter(t):
-    counter = 0
-    i = -1
-    while((counter-2)<=t):
+    counter = 0                                                 # Initialize counter variable to store the values at a particular time
+    i = -1                                                      # Initializing variable to store power value
+    while((counter-2)<=t):                                      # Iterate until value is less than or equal to input "t"
         i += 1
         counter = 3 * pow(2,i)
     i -= 1
