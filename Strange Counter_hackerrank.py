@@ -33,7 +33,7 @@ def strangeCounter(t):
     counter = 0                                                 # Initialize counter variable to store the values at a particular time
     i = -1                                                      # Initializing variable to store power value
     while((counter-2)<=t):                                      # Iterate until value is less than or equal to input "t"
-        i += 1
+        i += 1                                                  # Increase the value of i (power) by 1
         counter = 3 * pow(2,i)
     i -= 1
     counter = 3*pow(2,i)
