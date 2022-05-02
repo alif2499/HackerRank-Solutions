@@ -34,11 +34,11 @@ def strangeCounter(t):
     i = -1                                                      # Initializing variable to store power value
     while((counter-2)<=t):                                      # Iterate until value is less than or equal to input "t"
         i += 1                                                  # Increase the value of i (power) by 1
-        counter = 3 * pow(2,i)
-    i -= 1
-    counter = 3*pow(2,i)
-    startTime = counter - 2
-    result = counter - (t-startTime)
+        counter = 3 * pow(2,i)                                  # Find the starting value of the required column where given timeframe (t) resides
+    i -= 1                                                      # Decrease i by 1 because at the end of while loop i will have value 1 more than required
+    counter = 3*pow(2,i)                                        # Find the starting value of the required column with desired value of i
+    startTime = counter - 2                                     # Starting time frame of each column will be always 2 less than starting value for this problem
+    result = counter - (t-startTime)                            # The difference between starting timeframe and t will be equal to difference between starting value and required value at desired timeframe (t)
     return result
 
 if __name__ == '__main__':
